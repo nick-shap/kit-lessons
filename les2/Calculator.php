@@ -3,14 +3,12 @@
 class Calculator{
 
     function __construct(){
-
         $data = $this->getData();
         $result = $this->calculateResult($data);
         echo $this->showTemplate($data, $result);
     }
 
     private function calculateResult($data){
-
         if ($data["num2"] == 0 && $data["sign"] == "/"){
             return "На ноль делить нельзя";
         }
