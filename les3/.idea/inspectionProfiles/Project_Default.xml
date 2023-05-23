@@ -1,0 +1,14 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PhpCSValidationInspection" enabled="true" level="WARNING" enabled_by_default="true" editorAttributes="WARNING_ATTRIBUTES">
+      <scope name="Project Files" level="WARNING" enabled="true">
+        <option name="CODING_STANDARD" value="Custom" />
+        <option name="CUSTOM_RULESET_PATH" value="$PROJECT_DIR$/phpcs.xml" />
+        <option name="WARNING_HIGHLIGHT_LEVEL_NAME" value="ERROR" />
+        <option name="EXTENSIONS" value="php" />
+      </scope>
+      <option name="EXTENSIONS" value="php" />
+    </inspection_tool>
+  </profile>
+</component>
