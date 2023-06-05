@@ -1,0 +1,7 @@
+<h1>Список статей</h1>
+
+{% for article in articles  %}
+    <a href="/les5/article/{{ article.id }}">{{ article.name }}</a>
+{% else %}
+    No articles
+{% endfor %}
