@@ -10,7 +10,7 @@ class Compute
             return 0.0;
         }
 
-        if ($data["second_num"] == 0 && $data["sign"] == "/") {
+        if ($data["second_num"] === 0 && $data["sign"] === "/") {
             return "На ноль делить нельзя";
         }
 
