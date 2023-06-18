@@ -1,0 +1,21 @@
+{% extends "Base.twig" %}
+
+{% block title %} Статьи {% endblock %}
+
+{% block content %}
+
+    <h1>Статьи</h1>
+    <a href="{{ appUrl }}/add-article/" class="btn btn-primary">Добавить</a>
+
+    <div class="mt-4">
+        {% for article in articles %}
+            <p>
+                <a href="{{ appUrl }}/article/{{ article.id }}">{{ article.id }} - {{ article.name }}</a>
+                <a href="{{ appUrl }}/article/edit/{{ article.id }}">[Редактировать]</a>
+                <a href="{{ appUrl }}/article/delete/{{ article.id }}">[Удалить]</a>
+            </p>
+        {% else %}
+            <p>Статей нет!</p>
+        {% endfor %}
+    </div>
+{% endblock %}

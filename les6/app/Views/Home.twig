@@ -1,0 +1,10 @@
+{% extends "Base.twig" %}
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+    <h1>Главная</h1>
+    <a href="{{ usersURL }}">Пользователи</a><br>
+    <a href="{{ articlesURL }}">Статьи</a><br>
+    <a href="{{ logoutURL }}">Выход</a><br>
+{% endblock %}

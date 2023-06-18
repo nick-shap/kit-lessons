@@ -1,0 +1,13 @@
+{% extends "Base.twig" %}
+
+{% block title %} Пользоваетели {% endblock %}
+
+{% block content %}
+    <h1>Пользоваетели</h1>
+
+    {% for user in users %}
+        <p>{{ user.name }}</p>
+    {% else %}
+        <p>No users have been found.</p>
+    {% endfor %}
+{% endblock %}

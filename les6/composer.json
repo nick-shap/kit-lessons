@@ -1,0 +1,19 @@
+{
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/",
+      "App\\Controller\\": "app/Controllers",
+      "App\\Model\\": "app/Models",
+      "App\\Service\\": "app/Services",
+      "App\\Request\\": "app/Requests"
+    }
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.7"
+  },
+  "require": {
+    "illuminate/database": "^10.11",
+    "phroute/phroute": "^2.2",
+    "twig/twig": "^3.0"
+  }
+}
